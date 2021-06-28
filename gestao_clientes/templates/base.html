@@ -13,18 +13,19 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
+
+
 <body>
+
     <div class="jumbotron">
         <div class="container">
             {% block main %}
             {% endblock %}
         </div>
     </div>
-            {% block test %}
-            {% endblock %}
-
-            {% block footer  %}
-            {% endblock %}
-
+    
+        {% block footer  %}
+        {% endblock %}
+    
 </body>
 </html>

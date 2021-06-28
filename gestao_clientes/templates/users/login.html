@@ -5,19 +5,24 @@
 
 {% block main %}
 
-    <h2>Login</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form|bootstrap }}
-        <button type="submit" class="btn btn-info">Login</button>
-    </form>
+    <div class="container-fluid col-5 my-1">
+        <div class="p-3 mb-2 bg-white text-dark">
+            <h2>Login</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form|bootstrap }}
+                <button type="submit" class="btn btn-info">Login</button>
+            </form>
+        </div>
+    </div>
 
 {% endblock %}
 
 {% block footer  %}
+
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Desenvolvimento web com Django3.6</span>
+            <span class="text-muted">Douglas Magalhães</span>
         </div>
     </footer>
 {% endblock %}

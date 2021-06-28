@@ -12,20 +12,22 @@
         </div>
 
         <div class="col-6">
+
             <h3>Listagem de Clientes</h3>
+            
             <ul class="list-group">
                 {% for person in persons %}
                     <li class="list-group-item">
                         <a href="{% url 'persons_update' person.id %}"> {{person.first_name}}</a>
                         <a href="{% url 'persons_delete' person.id %}"class="trash-item">
                             <span class="glyphicon glyphicon-trash"></span>
-
                         </a>
                     </li>
                 {% endfor %}
             </ul>
 
             <br>
+        
         <a href="{% url 'person_new' %}"class="btn btn-primary">Novo Cliente</a>
 
         </div>
